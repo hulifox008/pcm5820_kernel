@@ -1,0 +1,4 @@
+config_3.10.4   Kernel config file used to boot PCM5820 board
+config_coreboot config file for coreboot
+
+The Geodeo MediaGX process doesn't support "movq" instruction. I was using gcc_4.6.3 (target x86_64). It generated "movq" instruction. Problem solved when switching to gcc_4.5.4 (target i686). Haven't try other versions yet.
